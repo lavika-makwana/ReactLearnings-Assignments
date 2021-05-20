@@ -1,0 +1,12 @@
+.new_expense{
+	color: black;
+}
+
+.submit_button{
+	border-color: transparent;
+	background-color: #8566aa;
+	color: #fff;
+	font-size: 20px;
+	margin: 12px 0px 15px 20px;
+	box-shadow: 5px 5px 15px -5px;
+}
