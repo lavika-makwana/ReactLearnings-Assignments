@@ -8,15 +8,22 @@ import Sdata from './components/Sdata';
 import reportWebVitals from './reportWebVitals';
 
 // ReactDOM.render(<App />, document.getElementById('root') );
+
+function ncard(val){
+	return(
+		<Card
+			imgsrc={val.imgsrc}
+			title={val.title}
+			sname={val.sname}
+			link={val.links}
+			/>
+	);
+};
+
 ReactDOM.render(
 	<>
 		<h2>List Of Top Netflix Series</h2>
-		<Card
-			imgsrc={Sdata[0].img}
-			title={Sdata[0].title}
-			sname={Sdata[0].sname}
-			imgsrc={Sdata[0].imgsrc}
-			/>
+			{Sdata.map(ncard)}
 	</>,
 	document.getElementById('root') 
 );
