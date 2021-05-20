@@ -1,21 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Card from './components/Cards'
+// import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(<App />, document.getElementById('root') );
+// ReactDOM.render(<App />, document.getElementById('root') );
+ReactDOM.render(
+	<>
+		<Card
+			imgsrc='https://wallpapercave.com/wp/wp4056410.jpg'
+			title='A Netflix Original'
+			sname='Dark'
+			link='https://www.netflix.com/in/title/80990668?source=35'
+			/>
+	</>,
+	document.getElementById('root') 
+);
 
-
-
-// ReactDOM.render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>,
-//   document.getElementById('root')
-// );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();

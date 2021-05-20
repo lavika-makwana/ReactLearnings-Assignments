@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import ToDoList from './components/ToDoList';
 import GreetMessage from './components/GreetMessage';
+import NewExpense from './components/NewExpense';
 import './App.css';
 
 const App = () => {
@@ -31,12 +32,13 @@ const App = () => {
 
   return (
     <div className='main_div'>
+      <NewExpense />
       <GreetMessage></GreetMessage>
       <div className='center_div'>
         <h1>To Do List</h1>
         <br/>
         <input type='text' placeholder='Add a Item' onChange={itemEvents}/> 
-        <button onClick={listOfItems}> + </button>
+        <button className='to_do_add_button' onClick={listOfItems}> + </button>
         <ol>
           {Items.map((item_val, index) => { 
             return <ToDoList
