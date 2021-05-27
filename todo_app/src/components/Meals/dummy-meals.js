@@ -23,4 +23,4 @@ const DUMMY_MEALS = [
     description: 'Healthy...and green...',
     price: 18.99,
   },
-];
+];  
